@@ -191,6 +191,7 @@ function loadData(){
         const card = addCard(todo.title,todo.description,todo.price,todo.tag?todo.tag:"Test")
         grid.append(card)
     })
+    calculatePrice();
     return "Done"
 }
 document.addEventListener('DOMContentLoaded',()=>{loadData();calculatePrice()})
