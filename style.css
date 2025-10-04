@@ -1,8 +1,11 @@
-/* @import "https://unpkg.com/open-props"; */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.card select{
+    margin-bottom: 1em;
+    display: block;
 }
 .card select[disabled] {
     -webkit-appearance: none;  
@@ -11,13 +14,15 @@
     background-image: none;
     background-color: transparent; 
     color: var(--gray-2);         
-    border-radius: var(--radius-blob-2);  
+    border-radius: var(--radius-blob-2);
+    border: var(--border-size-1) solid var(--gray-2);  
     padding: 10px;      
     cursor: default;    
     display: inline-block;
 }
 .card:hover select[disabled]{
     color: var(--gray-8);
+    border: var(--border-size-1) solid var(--gray-8);  
 }
 select[disabled] option:checked {
     color: inherit;

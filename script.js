@@ -61,6 +61,7 @@ addexp.addEventListener('click',()=>{
         calculatePrice()
     })
     grid.prepend(form)
+    h2.focus()
     
 })
 function addCard(title,desc,price,tag="Test"){
@@ -142,6 +143,7 @@ function addCard(title,desc,price,tag="Test"){
         selectBox.removeAttribute('disabled')
         del.style.display="none"
         price_span.addEventListener('input',calculatePrice)
+        h2.focus()
     })
     form.addEventListener('submit',(e)=>{
         e.preventDefault()            
