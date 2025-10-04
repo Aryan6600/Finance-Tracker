@@ -5,29 +5,20 @@
     box-sizing: border-box;
 }
 .card select[disabled] {
-    /* Reset Appearance */
-    -webkit-appearance: none;  /* Safari/Chrome */
-    -moz-appearance: none;     /* Firefox */
-    appearance: none;          /* Standard */
-    
-    /* Remove default arrow/icon */
+    -webkit-appearance: none;  
+    -moz-appearance: none;    
+    appearance: none;         
     background-image: none;
-    
-    /* Pill Styling */
-    background-color: transparent; /* Light, subtle background (Alice Blue) */
-    color: var(--gray-2);            /* Primary color for text (Blue) */
-    border-radius: var(--radius-blob-2);       /* Heavily rounded corners for the pill shape */
-    padding: 10px;         /* Compact padding */
-    /* font-size: var(--font-size-1); */
-    cursor: default;           /* Ensure the cursor doesn't suggest interactivity */
-    
-    /* Optional: Ensure text fits well and no extra margin/padding from user agent */
+    background-color: transparent; 
+    color: var(--gray-2);         
+    border-radius: var(--radius-blob-2);  
+    padding: 10px;      
+    cursor: default;    
     display: inline-block;
 }
 .card:hover select[disabled]{
     color: var(--gray-8);
 }
-/* 2. Target the disabled option to ensure text color is inherited */
 select[disabled] option:checked {
     color: inherit;
     background-color: transparent;

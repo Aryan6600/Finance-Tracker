@@ -123,6 +123,7 @@ function addCard(title,desc,price,tag="Test"){
         const prev_h2 = h2.innerText
         const prev_p = p.innerText
         const prev_price_span = price_span.innerText
+        submitbtn.innerText="Update"
         cancelBtn.addEventListener('click',()=>{
             price_span.setAttribute('contenteditable',false)
             h2.setAttribute('contenteditable',false)
